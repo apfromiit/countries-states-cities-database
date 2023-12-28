@@ -1,0 +1,36 @@
+ALTER TABLE public.countries
+DROP COLUMN iso3,
+DROP COLUMN numeric_code,
+DROP COLUMN iso2,
+DROP COLUMN phone_code,
+DROP COLUMN capital,
+DROP COLUMN currency,
+DROP COLUMN currency_name,
+DROP COLUMN currency_symbol,
+DROP COLUMN tld,
+DROP COLUMN native,
+DROP COLUMN region,
+DROP COLUMN region_id,
+DROP COLUMN subregion,
+DROP COLUMN subregion_id,
+DROP COLUMN nationality,
+DROP COLUMN latitude,
+DROP COLUMN longitude,
+DROP COLUMN emojiU;
+
+ALTER TABLE public.states
+DROP COLUMN country_name,
+DROP COLUMN country_code,
+DROP COLUMN state_code,
+DROP COLUMN type,
+DROP COLUMN latitude,
+DROP COLUMN longitude;
+
+ALTER TABLE public.cities
+DROP COLUMN state_name,
+DROP COLUMN country_name,
+DROP COLUMN state_code,
+DROP COLUMN country_code,
+DROP COLUMN latitude,
+DROP COLUMN longitude,
+DROP COLUMN wikiDataId;
